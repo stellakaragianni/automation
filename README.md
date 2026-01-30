@@ -1,7 +1,6 @@
 # Contact List App Automation
-# Contact List Test Automation Framework
 
-A comprehensive UI test automation framework for the [Contact List App](https://thinking-tester-contact-list.herokuapp.com) using Python, Selenium WebDriver, and pytest with the Page Object Model design pattern.
+A comprehensive UI test automation framework for the [Contact List App](https://thinking-tester-contact-list.herokuapp.com) using Python, Selenium WebDriver, and pytest.
 
 ## 🛠 Technology Stack
 
@@ -31,7 +30,9 @@ Before running the tests, ensure you have the following installed:
 
 ## 🚀 Installation
 
-### 1. Clone the Repository
+### 1. Download project and run locally on your IDE OR
+
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/contact-list-test-automation.git
@@ -50,3 +51,53 @@ This will install:
 - pytest-html
 - webdriver-manager
 
+## ▶️ Running Tests
+
+### Run All Tests
+
+```bash
+pytest -v
+```
+
+### Run Specific Test File
+
+```bash
+pytest tests/test_ui_selenium.py -v
+```
+
+### Run Specific Test Class
+
+```bash
+pytest tests/test_ui_selenium.py::TestContactListHappyPath -v
+```
+
+### Run Specific Test
+
+```bash
+pytest tests/test_ui_selenium.py::TestContactListHappyPath::test_create_account_and_verify_login -v
+```
+
+### Run with Detailed Output
+
+```bash
+pytest -v -s
+```
+
+- `-v` = verbose (shows test names)
+- `-s` = show print statements
+
+
+### Console Output
+```bash
+pytest -v
+```
+
+**Example Output:**
+```
+tests/test_ui_selenium.py::TestContactListHappyPath::test_create_account_and_verify_login PASSED
+tests/test_ui_selenium.py::TestContactListHappyPath::test_add_contact_and_verify_display PASSED
+tests/test_ui_selenium.py::TestContactListHappyPath::test_logout_login_contact_persists PASSED
+tests/test_ui_selenium.py::TestContactListUnhappyPath::test_signup_with_invalid_email PASSED
+tests/test_ui_selenium.py::TestContactListUnhappyPath::test_login_with_incorrect_credentials PASSED
+
+==================== 5 passed in 45.23s ====================
