@@ -5,3 +5,9 @@ pytest-html==4.1.1
 # Selenium WebDriver
 selenium==4.27.1
 webdriver-manager==4.0.2
+
+# IDE
+Thonny==4.1.7
+
+# Browser
+Chrome==Version 144.0.7559.60 (Official Build) (64-bit)
