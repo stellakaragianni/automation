@@ -101,6 +101,3 @@ tests/test_ui_selenium.py::TestContactListUnhappyPath::test_signup_with_invalid_
 tests/test_ui_selenium.py::TestContactListUnhappyPath::test_login_with_incorrect_credentials PASSED
 
 ==================== 5 passed in 45.23s ====================
-
-<img width="975" height="177" alt="image" src="https://github.com/user-attachments/assets/fe6099a4-988e-4a93-99d8-7db59f821d49" />
-
